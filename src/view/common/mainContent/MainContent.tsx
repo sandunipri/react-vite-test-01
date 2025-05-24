@@ -21,7 +21,7 @@ export function MainContent() {
     return (
         <div className="content">
             <Routes>
-                <Route path="/home" element={<Home/>}></Route>
+                <Route path="/" element={<Home/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/contact" element={<Contact/>}></Route>
             </Routes>

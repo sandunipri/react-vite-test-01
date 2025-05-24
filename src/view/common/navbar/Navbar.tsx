@@ -20,17 +20,26 @@ export class Navbar extends Component {
 }*/
 import './Navbar.css';
 import {Link} from "react-router-dom";
+import logo from '../../../assets/download.jpg';
 
 export function Navbar() {
     return (
         <div className="header">
-            <div className="logo">VITE-PROJECT</div>
+            <div className="logo">
+                <img src={logo} alt="logo"/>
+                <span>VITE-PROJECT</span>
+            </div>
             <div className="nav">
                 <ul className="nav-item">
-                    <li className="item"><Link to="/home" >Home</Link></li>
+                    <li className="item"><Link to="/" >Home</Link></li>
                     <li className="item"><Link to="/about">About</Link></li>
                     <li className="item"><Link to="/contact">Contact</Link></li>
                 </ul>
+                <div className="button">
+                    <button>
+                        <Link to="/login">SIGN IN</Link>
+                    </button>
+                </div>
             </div>
         </div>
     );
