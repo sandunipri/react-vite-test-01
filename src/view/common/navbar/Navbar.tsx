@@ -24,7 +24,7 @@ import logo from '../../../assets/download.jpg';
 
 export function Navbar() {
     return (
-        <div className="header">
+        <div className="header ">
             <div className="logo">
                 <img src={logo} alt="logo"/>
                 <span>VITE-PROJECT</span>
